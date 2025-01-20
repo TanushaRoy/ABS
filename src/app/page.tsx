@@ -41,10 +41,9 @@ export default function Dashboard() {
 
 
   const filteredData = data.filter((item) =>
-    item.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
-    item.role.toLowerCase().includes(searchQuery.toLowerCase()) 
+    item.name.toLowerCase().includes(searchQuery.toLowerCase()) || 
+     item.role.toLowerCase().includes(searchQuery.toLowerCase())
   );
-
   return (
     <>
       <Navbar handleQuery={handleQueryChange} />
